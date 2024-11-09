@@ -7,9 +7,10 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "postinstall": "npm run tailwindcss && npm run postcss",
+    "postinstall": "echo 'Skipping tailwind and postcss tasks during postinstall.'", // commenté pour tester
     "tailwindcss": "tailwindcss -i ./src/styles/tailwind.css -o ./src/styles/global.css --watch",
     "postcss": "postcss src/styles/global.css -o src/styles/global.css"
+  
   },
   "dependencies": {
     "@clerk/nextjs": "^6.3.0",
